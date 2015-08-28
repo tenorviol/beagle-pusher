@@ -2,7 +2,7 @@ package beaglepusher
 
 import com.heroicrobot.dropbit.registry.DeviceRegistry
 
-import beaglepusher.scene.CycleHSV
+import beaglepusher.scene._
 
 object Main extends App {
 
@@ -10,7 +10,7 @@ object Main extends App {
 
   registry.startPushing()
 
-  val scene = new CycleHSV(registry)
+  val scene = new Clear(registry)
   scene.run()
 
 }
